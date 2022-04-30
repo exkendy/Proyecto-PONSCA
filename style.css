@@ -222,27 +222,22 @@ li:active{
     order: 100;
 }
 
-.bi-chevron-left:hover{
+.bi-chevron-left:hover, .bi-chevron-right:hover{
     color: rgba(255, 255, 255, .9);
     cursor: pointer;
+    transform: scale(105%);
+    transition: transform .1s;
 }
 
-.bi-chevron-left:active{
+.bi-chevron-left:active, .bi-chevron-right:active{
     color: rgb(255, 255, 255);
+    transform: scale(95%);
 }
 
 .bi-chevron-right{
     order: 300;
 }
 
-.bi-chevron-right:hover{
-    color: rgba(255, 255, 255, .9);
-    cursor: pointer;
-}
-
-.bi-chevron-right:active{
-    color: rgb(255, 255, 255);
-}
 /*Estas son las flechitas END*/
 
 /*Primer articulo END*/

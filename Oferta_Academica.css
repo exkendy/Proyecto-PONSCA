@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,200;1,300;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*Colores del logo del PONSCA:
     azul= rgb(0,173,235)
@@ -51,6 +52,15 @@ header{
 
 .nav-menu li{
     margin-left: 3rem;
+}
+
+li{
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+}
+
+li:active{
+    transform: scale(0.95);
 }
 
 .nav-menu a:last-child:hover{

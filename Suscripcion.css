@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*Colores del logo del PONSCA:
     azul= rgb(0,173,235)
@@ -16,7 +17,7 @@
 }
 
 body, html{
-    background-image: url(fondo\ principal.jpg);
+    background-image: url(fondo-principal.jpg);
     overflow-x: hidden;
     height: 100%;
     scroll-behavior: smooth;
@@ -48,6 +49,15 @@ header{
 
 .nav-menu li{
     margin-left: 3rem;
+}
+
+li{
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+}
+
+li:active{
+    transform: scale(0.95);
 }
 
 .nav-menu li:last-child{
@@ -85,12 +95,14 @@ header{
 }
 
 .registro h4{
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
-    font-family: 'roboto', sans-serif;
-    position: relative;
-    left: 50px;
+    font-family: 'Lobster', cursive;
+    color: rgb(161, 132, 25);
+    text-align: center;
 }
+
+
 
 .controls{
     width: 100%;
@@ -127,10 +139,15 @@ header{
     width: 100%;
     background: rgb(161,132,25);
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.9rem 4rem;
     padding: 12px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 16px 0;
     font-size: 16px;
+    transition: transform 80ms ease-in;
 }
 
 .registro .link{
